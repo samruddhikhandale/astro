@@ -18,11 +18,13 @@
 
   "postCreateCommand": [
     "pnpm install",
-    "pnpm run build"
+    "pnpm run build",
+    "pnpm add -g @pnpm/merge-driver",
+    "pnpx npm-merge-driver install --driver-name pnpm-merge-driver --driver \"pnpm-merge-driver %A %O %B %P\" --files pnpm-lock.yaml"
   ],
 
   "postAttachCommand": {
-    "tests": "pnpm run test"
+    "Astro tests": "pnpm run build && pnpm run test"
   },
 
   "customizations": {
