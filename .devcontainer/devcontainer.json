@@ -23,6 +23,8 @@
     "pnpx npm-merge-driver install --driver-name pnpm-merge-driver --driver \"pnpm-merge-driver %A %O %B %P\" --files pnpm-lock.yaml"
   ],
 
+  "waitFor": "postCreateCommand",
+
   "postAttachCommand": {
     "Astro tests": "pnpm run build && pnpm run test"
   },
