@@ -1,11 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.238.1/containers/docker-existing-dockerfile
 {
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "name": "Contribute to Astro CodeSpaces",
-  // Sets the run context to one level up instead of the .devcontainer folder.
-  "context": "..",
-  // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-  "dockerFile": "../.devcontainer/Dockerfile",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/pnpm:2": {}
+  },
 
   "portsAttributes": {
     "3000": {
@@ -16,16 +16,16 @@
 
   "forwardPorts": [3000],
 
-  // "postCreateCommand": [
-  //   "pnpm install",
-  //   "pnpm run build"
-  // ],
+  "postCreateCommand": [
+    "pnpm install",
+    "pnpm run build"
+  ],
 
-  // "waitFor": "postCreateCommand",
+  "waitFor": "postCreateCommand",
 
-  // "postAttachCommand": {
-  //   "Astro tests": "pnpm run build && pnpm run test"
-  // },
+  "postAttachCommand": {
+    "Astro tests": "pnpm run build && pnpm run test"
+  },
 
   "customizations": {
     "vscode": {
