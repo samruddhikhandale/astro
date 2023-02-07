@@ -16,7 +16,7 @@
 
   "postCreateCommand": "pnpm install && pnpm run build",
 
-  // "waitFor": "postCreateCommand",
+  "waitFor": "postCreateCommand",
 
   "postAttachCommand": {
     "Astro tests": "pnpm run test"
