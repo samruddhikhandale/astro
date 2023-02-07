@@ -16,16 +16,16 @@
 
   "forwardPorts": [3000],
 
-  "postCreateCommand": [
-    "pnpm install",
-    "pnpm run build"
-  ],
+  // "postCreateCommand": [
+  //   "pnpm install",
+  //   "pnpm run build"
+  // ],
 
-  "waitFor": "postCreateCommand",
+  // "waitFor": "postCreateCommand",
 
-  "postAttachCommand": {
-    "Astro tests": "pnpm run build && pnpm run test"
-  },
+  // "postAttachCommand": {
+  //   "Astro tests": "pnpm run build && pnpm run test"
+  // },
 
   "customizations": {
     "vscode": {
