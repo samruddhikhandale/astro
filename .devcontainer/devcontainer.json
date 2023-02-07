@@ -24,7 +24,7 @@
   "waitFor": "postCreateCommand",
 
   "postAttachCommand": {
-    "Astro tests": "pnpm run build && pnpm run test"
+    "Astro tests": "pnpm run test"
   },
 
   "customizations": {
