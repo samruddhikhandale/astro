@@ -20,9 +20,9 @@
 
   // "waitFor": "postCreateCommand",
 
-  // "postAttachCommand": {
-  //   "Astro tests": "pnpm run test"
-  // },
+  "postAttachCommand": {
+    "Astro tests": "pnpm run test"
+  },
 
   "customizations": {
     "vscode": {
