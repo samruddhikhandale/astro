@@ -5,7 +5,7 @@
   // Sets the run context to one level up instead of the .devcontainer folder.
   "context": "..",
   // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-  "dockerFile": "../.Dockerfile",
+  "dockerFile": "../Dockerfile.codespaces",
 
   "portsAttributes": {
     "3000": {
@@ -20,6 +20,8 @@
     "pnpm install",
     "pnpm run build"
   ],
+
+  "waitFor": "postCreateCommand",
 
   "postAttachCommand": {
     "Astro tests": "pnpm run build && pnpm run test"
