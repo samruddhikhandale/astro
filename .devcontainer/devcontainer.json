@@ -15,7 +15,8 @@
   "forwardPorts": [3000],
 
   "postCreateCommand": [
-    "pnpm install"
+    "pnpm install",
+    "pnpm run build"
   ],
 
   // "waitFor": "postCreateCommand",
