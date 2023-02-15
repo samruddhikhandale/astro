@@ -5,10 +5,6 @@
   // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
   "dockerFile": "../.devcontainer/Dockerfile",
 
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
-  },  
-
   "portsAttributes": {
     "3000": {
       "label": "Application",
