@@ -4,6 +4,7 @@ FROM mcr.microsoft.com/devcontainers/javascript-node
 RUN npm install -g pnpm
 
 # Install deno
+ENV DENO_INSTALL=/usr/local
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
 # Install playwright
