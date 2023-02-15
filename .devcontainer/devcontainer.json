@@ -22,7 +22,7 @@
     "Astro tests": "pnpm run test"
   },
   
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/examples"
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/examples",
 
   "customizations": {
     "vscode": {
