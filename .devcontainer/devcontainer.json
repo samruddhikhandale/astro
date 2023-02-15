@@ -5,23 +5,8 @@
   // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
   "dockerFile": "../.devcontainer/Dockerfile",
 
-  "portsAttributes": {
-    "3000": {
-      "label": "Application",
-      "onAutoForward": "openPreview"
-    }
-  },
+  "postCreateCommand": "ls -la",
 
-  "forwardPorts": [3000],
-
-  "postCreateCommand": "pnpm install && pnpm run build",
-
-  "waitFor": "postCreateCommand",
-
-  "postAttachCommand": {
-    "Astro tests": "pnpm run test"
-  },
-  
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/examples",
 
   "customizations": {
